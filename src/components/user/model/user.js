@@ -14,6 +14,10 @@ const userSchema = new Schema({
         min: 6,
         required: [true, "وارد کردن کلمه عبور الزامی است"]
     },
+    isAdmin: {
+        type: Boolean,
+        default: false
+    },
 }, { timestamps: true })
 
 

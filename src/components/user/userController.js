@@ -5,6 +5,8 @@ const bcrypt = require('bcrypt');
 // ! helper
 const { createAccessToken } = require('../../helper/token');
 
+// ? desc ==> register user
+// ? path ==> user/register
 exports.register = async (req, res) => {
     const errors = [];
     try {
@@ -32,9 +34,8 @@ exports.register = async (req, res) => {
     }
 }
 
-
-
-
+// ? desc ==> login user
+// ? path ==> user/login
 exports.login = async (req, res) => {
     try {
         // ! get items
@@ -64,11 +65,3 @@ exports.login = async (req, res) => {
     }
 }
 
-exports.test = async (req, res) => {
-    try {
-        const user = req.user;
-        console.log(user);
-    } catch (err) {
-        return res.status(500).json({ message: err.message })
-    }
-}
