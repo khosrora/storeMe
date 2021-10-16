@@ -17,6 +17,7 @@ connectDB();
 // * routes
 app.use("/user", require('./src/components/user/userRouter'));
 app.use("/multimedia", require('./src/components/multimedia/multimediaRouter'));
+app.use("/category", require('./src/components/categories/categoriesRouter'));
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

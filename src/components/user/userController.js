@@ -30,7 +30,8 @@ exports.register = async (req, res) => {
         errors.push({
             error: err.message
         })
-        return res.status(500).json({ message: err.message })
+
+        return res.status(500).json({ message: errors })
     }
 }
 

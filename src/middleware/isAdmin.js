@@ -1,7 +1,6 @@
 // isAdmin
 exports.isAdmin = (req, res, next) => {
     const user = req.user;
-    console.log(user)
     if (user.isAdmin) {
         next();
     } else {
