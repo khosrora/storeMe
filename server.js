@@ -19,6 +19,9 @@ app.use("/user", require('./src/components/user/userRouter'));
 app.use("/multimedia", require('./src/components/multimedia/multimediaRouter'));
 app.use("/category", require('./src/components/categories/categoriesRouter'));
 app.use("/survey", require('./src/components/survey/surveyRouter'));
+app.use("/product", require('./src/components/products/producRouter'));
+app.use("/seller", require('./src/components/seller/sellerRouter'));
+app.use("/warranty", require('./src/components/warranty/warrantyRouter'));
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
