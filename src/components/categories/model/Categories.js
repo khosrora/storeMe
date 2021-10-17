@@ -17,10 +17,9 @@ const categorySchema = Schema({
     image: {
         type: Schema.Types.ObjectId,
         ref: "Multimedia",
-        required: true
     }
 
-}, { timestamps: true })
+})
 
 
 categorySchema.statics.categoriesValidate = body => {
