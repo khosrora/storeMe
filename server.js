@@ -22,6 +22,8 @@ app.use("/survey", require('./src/components/survey/surveyRouter'));
 app.use("/product", require('./src/components/products/producRouter'));
 app.use("/seller", require('./src/components/seller/sellerRouter'));
 app.use("/warranty", require('./src/components/warranty/warrantyRouter'));
+app.use("/slider", require('./src/components/slider/sliderRouter'));
+app.use("/banner", require('./src/components/banner/bannerRouter'));
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
